@@ -8,30 +8,32 @@
 
 function heeHaw(number) {
     if (isNaN(number)){
-        alert("Please enter a valid number");
+        console.log("Please enter a valid number");
     }
-    for (let i = 1; i <= number; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("Hee Haw!")
-        } else if (i % 3 === 0) {
-            console.log("Hee!");
-        } else if (i % 5 === 0) {
-            console.log("Haw!");
-        } else {
-            console.log(i);
+    else {
+        for (let i = 1; i <= number; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log("Hee Haw!")
+            } else if (i % 3 === 0) {
+                console.log("Hee!");
+            } else if (i % 5 === 0) {
+                console.log("Haw!");
+            } else {
+                console.log(i);
+            }
         }
     }
 }
-console.log("Test #1");
+console.log("Test #1: 50");
 heeHaw(50);
 
-console.log("Test #2");
+console.log("Test #2: 15");
 heeHaw(15);
 
-console.log("Test #3");
-heeHaw(50);
+console.log("Test #3: 37");
+heeHaw(37);
 
-console.log("Test #4");
+console.log("Test #4: Dallas");
 heeHaw("Dallas");
 
 
